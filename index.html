@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Clock</title>
+</head>
+<body>
+    <div id="clock" hidden>
+        <svg id="face" viewBox="0 0 100 100">
+            <circle id="rim" cx="50" cy="50" r="48"/>
+            <g id="minute-indicators"></g>
+            <line id="hour-hand" x1="50" y1="58" x2="50" y2="24" stroke-width="4"/>
+            <line id="minute-hand" x1="50" y1="60" x2="50" y2="17" stroke-width="2"/>
+            <g id="second-group">
+                <line id="second-hand" x1="50" y1="70" x2="50" y2="14"/>
+                <circle id="cap" cx="50" cy="50" r="2"/>
+            </g>
+        </svg>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
